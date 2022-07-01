@@ -8,18 +8,20 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import Styles from "./InputStyle.js";
+import * as SplashScreen from "expo-splash-screen";
 
 export default function (props) {
+
   const [game, setGame] = useState();
   const handleAddGame = (v) => {
     props.addGame(v);
-    
+
     setGame(null);
   };
 
   return (
     <KeyboardAvoidingView
-      // behavior={Platform.OS === "ios" ? "padding" : "height"}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={Styles.container}
     >
       <TextInput

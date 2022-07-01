@@ -9,7 +9,7 @@ export default StyleSheet.create({
   headContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 30,
+    marginTop: 50,
     paddingHorizontal: 20,
   },
 
